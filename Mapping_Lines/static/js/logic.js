@@ -5,7 +5,7 @@ console.log("working");
 let map = L.map('mapid').setView([37.6213, -122.3790], 5);
 
 // Coordinates for each point to be used in the line.
-let dash = [
+let line = [
     [37.6213, -122.3790],
     [30.1975, 97.6664],
     [43.6777, 79.6248],
@@ -14,7 +14,7 @@ let dash = [
   ];
 
 // Create a polyline using the line coordinates and make the line red.
-L.polyline(dash, {
+L.polyline(line, {
     color: "darkblue"
 }).addTo(map);
 
